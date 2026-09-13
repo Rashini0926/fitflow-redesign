@@ -1,0 +1,30 @@
+# JavaScript and TypeScript
+node_modules/
+.next/
+dist/
+coverage/
+
+# React Native
+android/.gradle/
+android/app/build/
+ios/Pods/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

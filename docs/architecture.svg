@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+  <title id="title">FitFlow high level architecture</title>
+  <desc id="desc">Mobile and web clients authenticate with Cognito and call a NestJS core API. The API uses FastAPI AI, PostgreSQL, Redis, object storage, WebSockets, and external health and notification services.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#355268"/></marker>
+    <style>
+      .title{font:700 30px Arial;fill:#172B3A}.group{fill:#F5F8FA;stroke:#AAB8C2;stroke-width:2;rx:18}.box{fill:#FFFFFF;stroke:#3C6E8F;stroke-width:2;rx:14}.accent{fill:#E8F2F8;stroke:#2D6F98;stroke-width:2;rx:14}.data{fill:#F4F0E6;stroke:#88733E;stroke-width:2;rx:14}.text{font:700 18px Arial;fill:#172B3A;text-anchor:middle}.small{font:14px Arial;fill:#435564;text-anchor:middle}.label{font:700 18px Arial;fill:#355268}.line{stroke:#355268;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="920" fill="#FFFFFF"/>
+  <text x="700" y="50" class="title" text-anchor="middle">FitFlow High Level Architecture</text>
+
+  <rect x="45" y="95" width="300" height="310" class="group"/>
+  <text x="70" y="128" class="label">Client Applications</text>
+  <rect x="80" y="155" width="230" height="95" class="accent"/>
+  <text x="195" y="192" class="text">React Native</text><text x="195" y="220" class="small">iOS and Android</text>
+  <rect x="80" y="280" width="230" height="95" class="accent"/>
+  <text x="195" y="317" class="text">Next.js Web</text><text x="195" y="345" class="small">User and admin portal</text>
+
+  <rect x="430" y="105" width="250" height="90" class="box"/>
+  <text x="555" y="142" class="text">Amazon Cognito</text><text x="555" y="169" class="small">OAuth 2.0 and OIDC</text>
+  <rect x="430" y="270" width="250" height="90" class="box"/>
+  <text x="555" y="307" class="text">API Gateway</text><text x="555" y="334" class="small">TLS, WAF, rate limits</text>
+
+  <rect x="765" y="95" width="590" height="310" class="group"/>
+  <text x="790" y="128" class="label">Application Services</text>
+  <rect x="805" y="155" width="245" height="95" class="accent"/>
+  <text x="927" y="192" class="text">NestJS Core API</text><text x="927" y="220" class="small">Profiles, consent, workouts</text>
+  <rect x="1070" y="155" width="245" height="95" class="accent"/>
+  <text x="1192" y="192" class="text">FastAPI AI Service</text><text x="1192" y="220" class="small">Plans, rationale, safety</text>
+  <rect x="805" y="280" width="245" height="95" class="box"/>
+  <text x="927" y="317" class="text">Realtime Layer</text><text x="927" y="345" class="small">WebSockets and events</text>
+  <rect x="1070" y="280" width="245" height="95" class="box"/>
+  <text x="1192" y="317" class="text">Notifications</text><text x="1192" y="345" class="small">FCM and APNs</text>
+
+  <rect x="430" y="485" width="925" height="235" class="group"/>
+  <text x="455" y="518" class="label">Data Platform</text>
+  <rect x="475" y="555" width="240" height="105" class="data"/>
+  <text x="595" y="594" class="text">PostgreSQL</text><text x="595" y="622" class="small">System of record</text>
+  <rect x="772" y="555" width="240" height="105" class="data"/>
+  <text x="892" y="594" class="text">Redis</text><text x="892" y="622" class="small">Cache, queue, fan-out</text>
+  <rect x="1069" y="555" width="240" height="105" class="data"/>
+  <text x="1189" y="594" class="text">Object Storage</text><text x="1189" y="622" class="small">Authorized media, exports</text>
+
+  <rect x="45" y="775" width="1310" height="105" class="group"/>
+  <text x="70" y="810" class="label">Platform Integrations</text>
+  <text x="700" y="850" class="text">HealthKit  |  Health Connect  |  TensorFlow Lite  |  ML Kit  |  Monitoring and Audit Logs</text>
+
+  <path d="M310 200 C360 200 380 150 430 150" class="line"/><path d="M310 325 C365 325 380 315 430 315" class="line"/>
+  <path d="M680 315 L805 205" class="line"/><path d="M680 150 C720 150 750 175 805 195" class="line"/>
+  <path d="M1050 202 L1070 202" class="line"/><path d="M927 250 L927 280" class="line"/><path d="M1050 328 L1070 328" class="line"/>
+  <path d="M927 250 C900 420 700 480 595 555" class="line"/><path d="M927 375 L892 555" class="line"/><path d="M1192 250 L1189 555" class="line"/>
+  <path d="M700 775 C700 735 760 730 800 700" class="line"/>
+</svg>
+

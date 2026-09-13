@@ -1,0 +1,10 @@
+Category,Criterion,Weight,Option A React Native NestJS PostgreSQL Cognito FastAPI,Option B Flutter FastAPI PostgreSQL Auth0,Option C Kotlin Multiplatform Go DynamoDB Cognito,Option D React Native Firebase Firestore Firebase Auth
+Full stack,Performance,20,4,4,5,4
+Full stack,Scalability,15,4,4,5,5
+Full stack,Development speed,15,5,4,3,5
+Full stack,Security and compliance readiness,20,5,4,5,3
+Full stack,Cost control,10,4,3,3,5
+Full stack,AI and ML support,10,5,5,3,4
+Full stack,Maintainability,10,5,4,3,4
+Full stack,Weighted score out of 5,100,4.55,4.00,4.10,4.20
+

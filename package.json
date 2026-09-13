@@ -1,0 +1,10 @@
+{
+  "name": "fitflow-redesign",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["backend"],
+  "scripts": {
+    "check": "npm --workspace @fitflow/backend run check"
+  }
+}
+
